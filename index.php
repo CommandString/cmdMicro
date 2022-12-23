@@ -17,7 +17,7 @@ require_once __DIR__ . "/vendor/autoload.php";
 
 if (!file_exists(__DIR__."/env.json")) {
     file_put_contents(__DIR__."/env.json", file_get_contents(__DIR__."/env.example.json"));
-    echo "Environment configuration does not exist, creating env.json!";
+    echo "Environment configuration does not exist, creating env.json!\n";
 }
 
 $env = Env::createFromJsonFile(__DIR__."/env.json");
