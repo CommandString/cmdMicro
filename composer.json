@@ -1,0 +1,13 @@
+{
+    "require": {
+        "commandstring/router": "^2.1",
+        "commandstring/env": "^1.0",
+        "commandstring/pdo": "^1.0",
+        "commandstring/cookie-encryption": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Routes\\": "./routes"
+        }
+    }
+}
