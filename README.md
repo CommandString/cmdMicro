@@ -1,8 +1,8 @@
-## cmdMicro
+# cmdMicro
 
 A PHP microframework for building websites
 
-## Table of Contents
+# Table of Contents
 - [Requirements](#requirements)
 - [Getting started](#getting-started)
 - [Environment Configuration](#environment-configuration)
