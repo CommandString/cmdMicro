@@ -8,7 +8,7 @@ use Psr\Http\Message\ResponseInterface;
 use stdClass;
 
 class Files {
-    public static stdClass $mimes;
+    private static stdClass $mimes;
 
     public static function main(RequestInterface $req, ResponseInterface $res): ResponseInterface
     {
