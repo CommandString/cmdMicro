@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa55a4035ea4e0d77e1447357dd23f1b",
+    "content-hash": "2c20d819f0546c142c73e498afe3b95c",
     "packages": [
         {
             "name": "commandstring/cookie-encryption",
@@ -159,16 +159,16 @@
         },
         {
             "name": "commandstring/pdo",
-            "version": "v1.0.1",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CommandString/Pdo.git",
-                "reference": "ad601a701d40d4bb18f0de235f981409cefb8216"
+                "reference": "0f288451c79978a749d2548dd771a6902dc97778"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CommandString/Pdo/zipball/ad601a701d40d4bb18f0de235f981409cefb8216",
-                "reference": "ad601a701d40d4bb18f0de235f981409cefb8216",
+                "url": "https://api.github.com/repos/CommandString/Pdo/zipball/0f288451c79978a749d2548dd771a6902dc97778",
+                "reference": "0f288451c79978a749d2548dd771a6902dc97778",
                 "shasum": ""
             },
             "type": "library",
@@ -184,9 +184,9 @@
             "description": "A PDO driver with additional features",
             "support": {
                 "issues": "https://github.com/CommandString/Pdo/issues",
-                "source": "https://github.com/CommandString/Pdo/tree/v1.0.1"
+                "source": "https://github.com/CommandString/Pdo/tree/v2.0.0"
             },
-            "time": "2022-10-29T23:35:56+00:00"
+            "time": "2022-12-24T00:39:15+00:00"
         },
         {
             "name": "commandstring/router",
