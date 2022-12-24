@@ -21,7 +21,7 @@ class Files {
         $path_to_file = realpath($unreal_file_path);
 
         $file_contents = file_get_contents($path_to_file);
-        $file_ext = strchr($req->getRequestTarget(), ".");
+        $file_ext = str_replace(".", "", strchr($req->getRequestTarget(), "."));
 
         return self::createResponseFromFile($file_contents, $file_ext);
     }
