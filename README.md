@@ -3,8 +3,6 @@
 A PHP microframework for building websites
 
 # Table of Contents
-- [cmdMicro](#cmdmicro)
-- [Table of Contents](#table-of-contents)
 - [Requirements](#requirements)
 - [Getting started](#getting-started)
 - [Environment Configuration](#environment-configuration)
