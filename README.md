@@ -3,6 +3,8 @@
 A PHP microframework for building websites
 
 # Table of Contents
+- [cmdMicro](#cmdmicro)
+- [Table of Contents](#table-of-contents)
 - [Requirements](#requirements)
 - [Getting started](#getting-started)
 - [Environment Configuration](#environment-configuration)
@@ -50,9 +52,9 @@ You can change or add your own configuration options to `/env.json`. Below is an
         "enabled": false, // Create commandstring/pdo instance 
         "username": "", // username used for connecting to db
         "password": "", // password used for connect to db
+        "name": "", // the name of the database to connect to
         "host": "", // the host of the db (e.g. 127.0.0.1)
-        "port": "", // port of the db (e.g. 3306)
-        "dsn_prefix": "" // dsn_prefix (e.g. mysql)
+        "port": "" // port of the db (e.g. 3306)
     }
 }
 ```

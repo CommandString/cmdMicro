@@ -33,13 +33,7 @@ $router = new Router(new SocketServer("{$env->server->ip}:{$env->server->port}")
 # |_____/ |     |    |    |     | |_____] |     | ______| |______ #
 
 if ($env->database->enabled) {
-    $env->driver = (new Driver)
-        ->withUsername($env->database->username)
-        ->withPassword($env->database->password)
-        ->withHost($env->database->host)
-        ->withPort($env->database->port)
-        ->connect()
-    ;
+    $env->driver = Driver::createMySqlDriver($env->database->username, $env->database->password, $env->database->database, $env->database->host, $env->database->port)->connect();
 }
 
 #  _______  _____   _____  _     _ _____ _______ _______ #
