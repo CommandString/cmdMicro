@@ -225,16 +225,16 @@
         },
         {
             "name": "commandstring/utils",
-            "version": "v1.2.1",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CommandString/Utils.git",
-                "reference": "6ba9c388a117e8050f7ee2c0ce6a4eb59cca8e35"
+                "reference": "785d0bd5d2aa12ab0b9922ec7e3cbd2e42550300"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CommandString/Utils/zipball/6ba9c388a117e8050f7ee2c0ce6a4eb59cca8e35",
-                "reference": "6ba9c388a117e8050f7ee2c0ce6a4eb59cca8e35",
+                "url": "https://api.github.com/repos/CommandString/Utils/zipball/785d0bd5d2aa12ab0b9922ec7e3cbd2e42550300",
+                "reference": "785d0bd5d2aa12ab0b9922ec7e3cbd2e42550300",
                 "shasum": ""
             },
             "type": "library",
@@ -249,9 +249,9 @@
             ],
             "support": {
                 "issues": "https://github.com/CommandString/Utils/issues",
-                "source": "https://github.com/CommandString/Utils/tree/v1.2.1"
+                "source": "https://github.com/CommandString/Utils/tree/v1.4.1"
             },
-            "time": "2022-12-21T08:24:44+00:00"
+            "time": "2023-01-04T14:41:32+00:00"
         },
         {
             "name": "evenement/evenement",
@@ -1550,16 +1550,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v3.4.3",
+            "version": "v3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "c38fd6b0b7f370c198db91ffd02e23b517426b58"
+                "reference": "3ffcf4b7d890770466da3b2666f82ac054e7ec72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/c38fd6b0b7f370c198db91ffd02e23b517426b58",
-                "reference": "c38fd6b0b7f370c198db91ffd02e23b517426b58",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3ffcf4b7d890770466da3b2666f82ac054e7ec72",
+                "reference": "3ffcf4b7d890770466da3b2666f82ac054e7ec72",
                 "shasum": ""
             },
             "require": {
@@ -1574,7 +1574,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.4-dev"
+                    "dev-master": "3.5-dev"
                 }
             },
             "autoload": {
@@ -1610,7 +1610,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.4.3"
+                "source": "https://github.com/twigphp/Twig/tree/v3.5.0"
             },
             "funding": [
                 {
@@ -1622,7 +1622,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-09-28T08:42:51+00:00"
+            "time": "2022-12-27T12:28:18+00:00"
         }
     ],
     "packages-dev": [],
@@ -1633,5 +1633,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
