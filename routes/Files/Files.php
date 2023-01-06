@@ -2,9 +2,12 @@
 
 namespace Routes\Files;
 
-use HttpSoft\Message\Response;
+use React\Http\Message\Response;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
+use React\EventLoop\Loop;
+use React\EventLoop\Timer\Timer;
+use React\Stream\ThroughStream;
 use stdClass;
 
 class Files {
@@ -20,17 +23,28 @@ class Files {
 
         $path_to_file = realpath($unreal_file_path);
 
-        $file_contents = file_get_contents($path_to_file);
+        $file_stream = fopen($path_to_file, "r");
+        $stream = new ThroughStream();
         $file_ext = str_replace(".", "", strchr($req->getRequestTarget(), "."));
+        
+        rewind($file_stream);
 
-        return self::createResponseFromFile($file_contents, $file_ext);
-    }
+        Loop::addPeriodicTimer(1e-6, function (Timer $timer) use ($stream, $file_stream) {
+            $stream->write(fgets($file_stream));
 
-    public static function createResponseFromFile(string $contents, string $extension) {
-        $res = (new Response())->withHeader("Content-Type", self::getMimeFromExtension($extension))->withHeader("Content-Length", strlen($contents));
-        $res->getBody()->write($contents);
+            if (feof($file_stream)) {
+                $stream->end();
+                Loop::cancelTimer($timer);
+            }
+        });
 
-        return $res;
+        return new Response(
+            Response::STATUS_OK,
+            array(
+                'Content-Type' => self::getMimeFromExtension($file_ext)
+            ),
+            $stream
+        );
     }
 
     public static function getMimes(): stdClass
