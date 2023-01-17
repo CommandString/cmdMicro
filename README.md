@@ -29,7 +29,7 @@ A PHP microframework for building websites
 
 You can change or add your own configuration options to `/env.json`. Below is an explanation for each configurable option.
 
-```json
+```js
 {
     "server": {
         "ip": "127.0.0.1", // the IP address the server should be binded to
