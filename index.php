@@ -1,7 +1,7 @@
 <?php
 
 use CommandString\CookieEncryption\Encryption;
-use CommandString\Cookies\Cookie;
+use CommandString\Cookies\CookieController;
 use CommandString\Pdo\Driver;
 use React\Socket\SocketServer;
 use Router\Http\Router;
@@ -41,7 +41,7 @@ if ($env->database->enabled) {
 # |_____  |_____| |_____| |    \_ __|__ |______ ______| #
 
 if ($env->cookies->enabled) {
-    $env->cookie = new Cookie(new Encryption($env->cookies->encryption_passphrase, $env->cookies->encryption_algo));
+    $env->cookie = new CookieController(new Encryption($env->cookies->encryption_passphrase, $env->cookies->encryption_algo));
 }
 
 # _______ _  _  _ _____  ______ #
