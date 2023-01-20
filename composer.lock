@@ -4,24 +4,23 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2c20d819f0546c142c73e498afe3b95c",
+    "content-hash": "99ca644a797ea1380907f756b57b5d9f",
     "packages": [
         {
             "name": "commandstring/cookie-encryption",
-            "version": "v2.0.1",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CommandString/Cookie-Encryption.git",
-                "reference": "7f5b5be1b82e714aa6430d741cfe1d87e47d0863"
+                "reference": "393476f44538337e06d341a8a4af22541ec83656"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CommandString/Cookie-Encryption/zipball/7f5b5be1b82e714aa6430d741cfe1d87e47d0863",
-                "reference": "7f5b5be1b82e714aa6430d741cfe1d87e47d0863",
+                "url": "https://api.github.com/repos/CommandString/Cookie-Encryption/zipball/393476f44538337e06d341a8a4af22541ec83656",
+                "reference": "393476f44538337e06d341a8a4af22541ec83656",
                 "shasum": ""
             },
             "require": {
-                "commandstring/cookies": "*",
                 "commandstring/encrypt": "*",
                 "php": ">=8.1"
             },
@@ -38,46 +37,9 @@
             "description": "An addon to commandstring/cookies to encrypt cookies with commandstring/encrypt",
             "support": {
                 "issues": "https://github.com/CommandString/Cookie-Encryption/issues",
-                "source": "https://github.com/CommandString/Cookie-Encryption/tree/v2.0.1"
+                "source": "https://github.com/CommandString/Cookie-Encryption/tree/v3.0.1"
             },
-            "time": "2022-11-09T14:02:22+00:00"
-        },
-        {
-            "name": "commandstring/cookies",
-            "version": "v5.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/CommandString/Cookies.git",
-                "reference": "62cb701cbd8503f2671f51a4b08713fee4323531"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/CommandString/Cookies/zipball/62cb701cbd8503f2671f51a4b08713fee4323531",
-                "reference": "62cb701cbd8503f2671f51a4b08713fee4323531",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.1"
-            },
-            "suggest": {
-                "commandstring/cookie-encryption": "*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "CommandString\\Cookies\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "A simpler way to manipulate cookies in PHP",
-            "support": {
-                "issues": "https://github.com/CommandString/Cookies/issues",
-                "source": "https://github.com/CommandString/Cookies/tree/v5.0.1"
-            },
-            "time": "2022-10-30T00:38:50+00:00"
+            "time": "2023-01-20T07:31:43+00:00"
         },
         {
             "name": "commandstring/encrypt",
@@ -189,17 +151,58 @@
             "time": "2022-12-24T00:39:15+00:00"
         },
         {
-            "name": "commandstring/router",
-            "version": "v2.1.2",
+            "name": "commandstring/reactphp-cookies",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/CommandString/Router.git",
-                "reference": "aaaae2268b5e14fbff0a3d035e360421fba696d6"
+                "url": "https://github.com/CommandString/ReactPHP-Cookies.git",
+                "reference": "503f251bb7c7187095448571b196f9b5c20cf421"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CommandString/Router/zipball/aaaae2268b5e14fbff0a3d035e360421fba696d6",
-                "reference": "aaaae2268b5e14fbff0a3d035e360421fba696d6",
+                "url": "https://api.github.com/repos/CommandString/ReactPHP-Cookies/zipball/503f251bb7c7187095448571b196f9b5c20cf421",
+                "reference": "503f251bb7c7187095448571b196f9b5c20cf421",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "react/http": "^1.8"
+            },
+            "conflict": {
+                "commandstring/cookies": "*"
+            },
+            "suggest": {
+                "commandstring/cookie-encryption": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CommandString\\Cookies\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A simpler way to manipulate cookies in React/Http",
+            "support": {
+                "issues": "https://github.com/CommandString/ReactPHP-Cookies/issues",
+                "source": "https://github.com/CommandString/ReactPHP-Cookies/tree/v1.0.0"
+            },
+            "time": "2023-01-20T07:55:51+00:00"
+        },
+        {
+            "name": "commandstring/router",
+            "version": "V2.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CommandString/Router.git",
+                "reference": "0dcecda0106886db80f12fe201290326957cd501"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CommandString/Router/zipball/0dcecda0106886db80f12fe201290326957cd501",
+                "reference": "0dcecda0106886db80f12fe201290326957cd501",
                 "shasum": ""
             },
             "require": {
@@ -219,9 +222,9 @@
             ],
             "support": {
                 "issues": "https://github.com/CommandString/Router/issues",
-                "source": "https://github.com/CommandString/Router/tree/v2.1.2"
+                "source": "https://github.com/CommandString/Router/tree/V2.1.3"
             },
-            "time": "2022-12-22T19:29:00+00:00"
+            "time": "2023-01-07T05:36:00+00:00"
         },
         {
             "name": "commandstring/utils",
