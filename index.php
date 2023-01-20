@@ -55,6 +55,8 @@ $env->twig = new Environment(new FilesystemLoader(realpath($env->twigConfig->vie
 # |    \_ |_____| |_____|    |    |______ ______| #
 $router
     ->get("/", [Routes\Home::class, "main"])
+
+    // DO NOT ADD ROUTES BELOW THIS OR THEY WILL NOT WORK //
     ->get("/.*(".\Routes\Files\Files::generateRegex().")", [\Routes\Files\Files::class, "main"])
     ->map404("/(.*)", [\Routes\ErrorHandler::class, "handle404"])
     ->map500("/(.*)", [\Routes\ErrorHandler::class, "handle500"])
