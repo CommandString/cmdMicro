@@ -69,7 +69,7 @@ For creating views I would recommend checkout out documentation for [Twig](https
 
 # Cookie Manipulation
 
-Checkout the README for [CommandString/Cookies](https://github.com/commandstring/cookies#basic-usage) for on how to manipulate cookies.
+Checkout the README for [CommandString/ReactPHP-Cookies](https://github.com/commandstring/reactphp-cookies) for on how to manipulate cookies.
 
 # Database Interaction
 
@@ -83,10 +83,10 @@ If you know PDO then you know how to use 99% of my PDO driver you can read more 
 | /public/assets/img 	| Images
 | /public/assets/css 	| Cascading Style Sheets
 | /public/assets/js  	| Javascript
-| /routes 		| Route declarations and handlers
-| /views  		| Template storage
-| /cache		| Cached template storage
-| /extensions   | Twig extensions
+| /routes 		        | Route declarations and handlers
+| /views  		        | Template storage
+| /cache		        | Cached template storage
+| /extensions           | Twig extensions
 
 # Developing
 
