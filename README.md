@@ -3,6 +3,8 @@
 A PHP microframework for building websites
 
 # Table of Contents
+- [cmdMicro](#cmdmicro)
+- [Table of Contents](#table-of-contents)
 - [Requirements](#requirements)
 - [Getting started](#getting-started)
 - [Environment Configuration](#environment-configuration)
@@ -65,7 +67,7 @@ You can read more on how to utilize this by checking out the README for [Command
 
 Route Controllers should be stored inside `/routes`. For actually creating routes read through [CommandString/Router](https://github.com/commandstring/router#routing) for a more in-depth explanation on how to create routes.
 
-For creating views I would recommend checkout out documentation for [Twig](https://twig.symfony.com/) by default all views are stored in `/views` and all public assets (e.g. css, js, and images) are stored inside `/public`
+For creating views I would recommend checking out the documentation for [BladeOne](https://github.com/EFTEC/BladeOne) as well as [Blade](https://laravel.com/docs/9.x/blade) by default all views are stored in `/views` and all public assets (e.g. css, js, and images) are stored inside `/public`
 
 # Cookie Manipulation
 
@@ -83,10 +85,10 @@ If you know PDO then you know how to use 99% of my PDO driver you can read more 
 | /public/assets/img 	| Images
 | /public/assets/css 	| Cascading Style Sheets
 | /public/assets/js  	| Javascript
-| /routes 		        | Route declarations and handlers
-| /views  		        | Template storage
-| /cache		        | Cached template storage
-| /extensions           | Twig extensions
+| /routes 		        | Route controller storage
+| /views  		        | Blade template storage
+| /compiled		        | Compiled view storage
+| /common               | Common class storage
 
 # Developing
 
