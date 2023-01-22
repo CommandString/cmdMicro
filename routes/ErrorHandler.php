@@ -2,7 +2,7 @@
 
 namespace Routes;
 
-use CommandString\Env\Env;
+use Common\Env;
 use HttpSoft\Response\HtmlResponse;
 use Psr\Http\Message\ResponseInterface;
 use React\Http\Message\ServerRequest;
@@ -10,15 +10,11 @@ use React\Http\Message\ServerRequest;
 class ErrorHandler {
     public static function handle404(ServerRequest $req): ResponseInterface
     {
-        return new HtmlResponse(Env::get()->twig->render("errors/404.html", [
-            "uri" => $req->getRequestTarget()
-        ]), 404);
+        return new HtmlResponse(Env::blade()->run("errors.404", ["uri" => $req->getRequestTarget()]));
     }
 
     public static function handle500(ServerRequest $req): ResponseInterface
     {
-        return new HtmlResponse(Env::get()->twig->render("errors/500.html", [
-            "uri" => $req->getRequestTarget()
-        ]), 500);
+        return new HtmlResponse(Env::blade()->run("errors.500", ["uri" => $req->getRequestTarget()]));
     }
 }

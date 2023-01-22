@@ -1,17 +1,18 @@
-{% extends "templates/basic.html" %}
+@extends('templates.basic')
 
-{% block head %}
+@section('head')
 <link rel="stylesheet" href="/assets/css/errorPage.css">
 <script src="/assets/js/errorPage.js"></script>
-{% endblock %}
+<title>@yield('header')</title>
+@endsection
 
-{% block body %}
+@section('body')
 <div class="ui inverted red segment">
     <h1 class="ui centered massive header">
-        {% block header %}{% endblock %}
+        @yield('header')
         <div class="sub header">
-            {% block subheader %}{% endblock %}
+            @yield('sub-header')
         </div>
     </h1>
 </div>
-{% endblock %}
+@endsection

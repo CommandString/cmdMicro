@@ -10,9 +10,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.0/dist/semantic.min.css">
     <link rel="shortcut icon" href="/assets/img/logo.png" type="image/png">
 
-    {% block head %}{% endblock %}
+    @yield('head')
 </head>
 <body>
-    {% block body %}{% endblock %}
+    @yield('body')
 </body>
 </html>

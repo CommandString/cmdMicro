@@ -3,11 +3,10 @@
 use CommandString\CookieEncryption\Encryption;
 use CommandString\Cookies\CookieController;
 use CommandString\Pdo\Driver;
+use eftec\bladeone\BladeOne;
 use React\Socket\SocketServer;
 use Router\Http\Router;
-use CommandString\Env\Env;
-use Twig\Environment;
-use Twig\Loader\FilesystemLoader;
+use Common\Env;
 
 require_once __DIR__ . "/vendor/autoload.php";
 
@@ -44,11 +43,11 @@ if ($env->cookies->enabled) {
     $env->cookie = new CookieController(new Encryption($env->cookies->encryption_passphrase, $env->cookies->encryption_algo));
 }
 
-# _______ _  _  _ _____  ______ #
-#    |    |  |  |   |   |  ____ #
-#    |    |__|__| __|__ |_____| #
+# ______         _______ ______  _______  _____  __   _ _______
+# |_____] |      |_____| |     \ |______ |     | | \  | |______
+# |_____] |_____ |     | |_____/ |______ |_____| |  \_| |______
 
-$env->twig = new Environment(new FilesystemLoader(realpath($env->twigConfig->views)));
+$env->blade = new BladeOne(realpath("./views"), realpath("./compiles"), BladeOne::MODE_SLOW); // change to MODE_FAST for production
 
 #  ______  _____  _     _ _______ _______ _______ #
 # |_____/ |     | |     |    |    |______ |______ #
